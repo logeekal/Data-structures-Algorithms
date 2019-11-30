@@ -1,0 +1,24 @@
+{
+  "name": "ds-algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testa": "mocha --require @babel/register  ./**/__tests__/**/.js ",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "jest": "^24.9.0"
+  }
+}

@@ -7,6 +7,10 @@
     "testa": "mocha --require @babel/register  ./**/__tests__/**/.js ",
     "test": "jest"
   },
+  "jest":{
+    "verbose":  true,
+    "testMatch": [ "**/?(*.)+(spec|test).[jt]s?(x)" ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

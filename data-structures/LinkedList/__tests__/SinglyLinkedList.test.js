@@ -19,8 +19,6 @@ describe('Testing SinglyLinkedList', ()=>{
             let newSLL =  new SinglyLinkedList();
         }).to.throw('At least 1 value is needed to initiate a linked List node.')
     })
-
-
     
     test('Initialize LinkedList with an array',()=> {
         let initialArray = [1,5,6,78,9,0,4,23,2];
@@ -44,5 +42,25 @@ describe('Testing SinglyLinkedList', ()=>{
         assert.strictEqual(newSLL.length, len );
         // assert.sameOrderedMembers(LLArray, initialArray)
 
+    });
+
+    test('Append data in the linked List',()=> {
+        let ll = new SinglyLinkedList(10);
+        ll.append(10);
+        ll.append(20);
+        ll.append(21);
+
+        let resultLL = ll.toArray();
+        assert.sameOrderedMembers(resultLL,[10,10,20,21]);
+    });
+
+    test('Prepend data in the linked List',()=> {
+        let ll = new SinglyLinkedList(10);
+        ll.prepend(10);
+        ll.prepend(20);
+        ll.prepend(21);
+
+        let resultLL = ll.toArray();
+        assert.sameOrderedMembers(resultLL,[21,20,10,10]);
     })
 })
